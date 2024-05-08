@@ -1,0 +1,479 @@
+body {
+  background-color: #FFFEF6;
+  font-family: garamond, serif;
+  overflow-x: hidden;
+}
+
+/* digital */
+.true-clock {
+  position: relative;
+  opacity: 1;
+}
+
+/* analog */
+.hand {
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  height: 3px;
+}
+
+.container {
+  position: fixed;
+  top: 4vh;
+  right: 2.5vw;
+}
+
+.container-2 {
+  position: fixed;
+  top: 2.5vh;
+  left: 2.5vw;
+}
+
+button {
+  background-color: #FFFEF6;
+  border: none;
+  color: black;
+  display: block;
+  font-size: large;
+  cursor: pointer;
+}
+
+/* toggles */
+.tog-1 {
+  padding-left: 3vw;
+  margin-top: -8vh;
+  width: 15vw;
+  z-index: -10;
+}
+
+.tog-2 {
+  width: 15vw; 
+  left: 25vw;
+  margin-top: -7vh;
+  position: relative;
+  z-index: -10;
+}
+
+.tog-3 {
+  width: 15vw;
+  margin-top: -7vh;
+  z-index: -10;
+  padding-left: 10vw;
+}
+
+.tog-4 {
+  width: 15vw;
+  z-index: -10;
+  left: 45vw;
+  margin-top: 74vh;
+  position: absolute;
+}
+
+.tog-5 {
+  width: 15vw;
+  z-index: -10;
+  left: 30vw;
+  margin-top: 35vh;
+  position: relative;
+}
+
+.tog-6 {
+  width: 15vw;
+  z-index: -10;
+  left: 19vw;
+  margin-top: 36vh;
+  position: relative;
+}
+
+.tog-7 {
+  width: 15vw;
+  z-index: -10;
+  left: 82vw;
+  top: 36vh;
+  position: relative;
+}
+
+.tog-8 {
+  width: 15vw;
+  z-index: -10;
+  top: 2vh;
+  left: 23vw;
+  position: relative;
+}
+
+.tog-9 {
+  width: 15vw;
+  z-index: -10;
+  top: -9vh;
+  left: 10vw;
+  position: relative;
+}
+
+.tog-10 {
+  width: 15vw;
+  z-index: -10;
+  position: relative;
+  top: -7vh;
+  left: 20vw;
+}
+
+.tog-11 {
+  width: 15vw;
+  z-index: -10;
+  position: relative;
+  left: 38vw;
+  top: -22vh;
+}
+
+.tog-12 {
+  width: 15vw;
+  z-index: -10;
+  left: 22vw;
+  top: -33vh;
+  position: relative;
+}
+  
+/* clock-1 */
+.clock-1 {
+  margin-top: 50vh;
+  left: 3vw;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+}
+
+.hand.hour-1 {
+    background: #0E71D0;
+    width: 10vw;
+    z-index: 3;
+  }
+  
+.hand.min-1 {
+    background: #0E71D0;
+    width: 12vw;
+    z-index: 10;
+  }
+  
+.hand.second-1 {
+    width: 14vw;
+    background: #E47880;
+  } 
+
+/* clock-2 */
+.clock-2 {
+    left: 50vw;
+    top: 50vh;
+    position: absolute;
+    opacity: 0;
+}
+
+.hand.hour-2 {
+  background: #077072;
+  width: 14vw;
+  z-index: 0;
+  left: 15vw;
+  top: -8vh;
+}
+
+.hand.min-2 {
+  background: #077072;
+  width: 20vw;
+  z-index: 1;
+}
+
+.hand.second-2 {
+  background: #D5B7C9;
+  width: 8vw;
+  left: 30vw;
+  top: -10vh;
+}
+
+/* clock-3 */
+.clock-3 {
+  left: 4vw;
+  top: 15vh;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-3 {
+  background: #780224;
+  width: 8vw;
+  z-index: 0;
+  left: 10vw;
+  top: -8vh;
+}
+
+.hand.min-3 {
+  background: #780224;
+  width: 10vw;
+  left: 8vw;
+  z-index: 1;
+}
+
+.hand.second-3 {
+  background: #E2E0A9;
+  width: 12vw;
+  left: 2vw;
+  top: 5vh;
+} 
+
+/* clock-4 */
+.clock-4 {
+  left: 10vw;
+  top: 10vh;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-4 {
+  background: #D00520;
+  width: 12vw;
+  left: 40vw;
+  top: 75vh;
+}
+
+.hand.min-4 {
+  background: #D00520;
+  width: 20vw;
+  left: 35vw;
+  top: 70vh;
+  z-index: 1;
+}
+
+.hand.second-4 {
+  background: #203A64;
+  width: 16vw;
+  left: 45vw;
+  top: 75vh;
+} 
+
+/* clock-5 */
+.clock-5 {
+  left: 10vw;
+  top: 10vh;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-5 {
+  background: #B86E2A;
+  width: 25vw;
+  left: 5vw;
+  top: 45vh;
+}
+
+.hand.min-5 {
+  background: #B86E2A;
+  width: 24vw;
+  left: 7vw;
+  top: 38vh;
+  z-index: 1;
+}
+
+.hand.second-5 {
+  background: #077072;
+  width: 26vw;
+  left: 15vw;
+  top: 30vh;
+} 
+
+/* clock-6 */
+.clock-6 {
+  top: 50vh;
+  left: 4vw;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-6 {
+  background: #BECFDF;
+  width: 15vw;
+  left: 10vw;
+  top: 45vh;
+}
+
+.hand.min-6 {
+  background: #BECFDF;
+  width: 17vw;
+  left: 13vw;
+  top: 38vh;
+  z-index: 1;
+}
+
+.hand.second-6 {
+  background: #703258;
+  width: 16vw;
+  left: 13vw;
+  top: 38vh;
+} 
+
+/* clock-7 */
+.clock-7 {
+  top: 48vh;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-7 {
+  background: #333233;
+  width: 15vw;
+  left: 70vw;
+  top: 50vh;
+
+}
+
+.hand.min-7 {
+  background: #333233;
+  width: 17vw;
+  left: 80vw;
+  top: 52vh;
+  z-index: 1;
+}
+
+.hand.second-7 {
+  background: #F1C777;
+  width: 16vw;
+  left: 80vw;
+  top: 50vh;
+} 
+
+/* clock-8 */
+.clock-8 {
+  top: 110vh;
+  left: -19vw;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand.hour-8 {
+  background: #ADA08D;
+  width: 23vw;
+}
+
+.hand.min-8 {
+  background: #ADA08D;
+  width: 25vw;
+  z-index: 1;
+}
+
+.hand.second-8 {
+  background: #BD77A8;
+  width: 26vw;
+  top: 18vh;
+} 
+
+/* clock-9 */
+.clock-9 {
+  top: 17vh;
+  left: 50vw;
+  position: relative;
+  opacity: 0;
+}
+
+.hand.hour-9 {
+  background: #ADA08D;
+  width: 15vw;
+  top: -5vh;
+  left: -3vw;
+}
+
+.hand.min-9 {
+  background: #ADA08D;
+  width: 18vw;
+  z-index: 1;
+  top: -3vh;
+  left: -3vw;
+}
+
+.hand.second-9 {
+  background: #CA061D;
+  width: 15vw;
+  left: 5vw;
+}
+
+/* clock-10 */
+.clock-10 {
+  position: relative;
+  top: 130vh;
+  left: 10vw;
+  opacity: 0;
+}
+
+.hand.hour-10 {
+  background: #1B5E37;
+  width: 12vw;
+}
+
+.hand.min-10 {
+  background: #1B5E37;
+  width: 15vw;
+  left: 6vw;
+}
+
+.hand.second-10 {
+  background: #A32770;
+  width: 19vw;
+  top: -20vh;
+  left: 10vw;
+}
+
+/* clock-11 */
+.clock-11 {
+  position: relative;
+  top: 130vh;
+  left: 40vw;
+  opacity: 0;
+}
+
+.hand.hour-11 {
+  background: #6196B8;
+  width: 22vw;
+  left: 13vw;
+  top: -18vh;
+}
+
+.hand.min-11 {
+  background: #6196B8;
+  width: 26vw;
+  left: 6vw;
+  top: -12vh;
+}
+
+.hand.second-11 {
+  background: #E2C9A0;
+  width: 32vw;
+  top: -20vh;
+  left: 10vw;
+}
+
+/* clock-12 */
+.clock-12 {
+  position: relative;
+  top: 100vh;
+  left: 30vw;
+  opacity: 0;
+}
+
+.hand.hour-12 {
+  background: #585472;
+  width: 12vw;
+  left: 13vw;
+  top: -18vh;
+}
+
+.hand.min-12 {
+  background: #585472;
+  width: 13vw;
+  left: 6vw;
+  top: 12vh;
+}
+
+.hand.second-12 {
+  background: #D47844;
+  width: 14vw;
+  top: -20vh;
+  left: 10vw;
+}
